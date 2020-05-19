@@ -19,7 +19,7 @@ function currentLine(array) {
   var newString = '';
   
   for (let i = 0; i < array.length; i++){
-    newString = newString + (`${i+1}. ${array[i]} ,`)
+    newString = newString + (`${i+1}. ${array[i]}, `)
   }
   if (array.length > 0){
     return (`The line is currently: ${newString}`)

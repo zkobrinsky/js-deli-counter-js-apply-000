@@ -22,7 +22,7 @@ function currentLine(array) {
     newString = newString + (`${i+1}. ${array[i]} ,`)
   }
   if (array.length > 0){
-    return (`The line is currently: ${newArray}`)
+    return (`The line is currently: ${neString}`)
   } else {
     return (`The line is currently empty.`)
   }

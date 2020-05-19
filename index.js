@@ -22,6 +22,7 @@ function currentLine(array) {
     newArray.push(`${i+1}. ${array[i]}`)
   }
   if (array.length > 0){
+    newArray.join(', ')
     return (`The line is currently: ${newArray}`)
   } else {
     return (`The line is currently empty.`)

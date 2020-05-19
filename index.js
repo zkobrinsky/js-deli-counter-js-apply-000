@@ -17,7 +17,7 @@ function nowServing(array){
 
 function currentLine(array) {
   var newArray = [];
-  var newArrayForSring = []
+  let newArrayForSring = []
   
   for (let i = 0; i < array.length; i++){
     newArray.push(`${i+1}. ${array[i]}`)

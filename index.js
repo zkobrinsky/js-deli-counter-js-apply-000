@@ -16,13 +16,13 @@ function nowServing(array){
 }
 
 function currentLine(array) {
-  var newString = '';
+  var newArray = [];
   
   for (let i = 0; i < array.length; i++){
-    newString = newString + (`${i+1}. ${array[i]}, `)
+    newArray.push(`${i+1}. ${array[i]}`)
   }
   if (array.length > 0){
-    return (`The line is currently: ${newString}`)
+    return (`The line is currently: ${newArray}`)
   } else {
     return (`The line is currently empty.`)
   }

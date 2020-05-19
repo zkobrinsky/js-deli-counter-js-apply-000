@@ -17,6 +17,7 @@ function nowServing(array){
 
 function currentLine(array) {
   var newArray = [];
+  var newArrayForSring = []
   
   for (let i = 0; i < array.length; i++){
     newArray.push(`${i+1}. ${array[i]}`)
@@ -24,8 +25,8 @@ function currentLine(array) {
   }
   
   if (array.length > 0){
-    newArray.join(', ')
-    return (`The line is currently: ${newArray}`)
+    newArrayForString = newArray.join(', ')
+    return (`The line is currently: ${newArrayForString}`)
   } else {
     return (`The line is currently empty.`)
   }

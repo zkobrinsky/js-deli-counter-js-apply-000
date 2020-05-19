@@ -25,7 +25,8 @@ function currentLine(array) {
   }
   
   if (array.length > 0){
-    newArrayForString = newArray.join(', ')
+    newArrayForString = newArray.slice()
+    newArrayForString.join(', ')
     return (`The line is currently: ${newArrayForString}`)
   } else {
     return (`The line is currently empty.`)

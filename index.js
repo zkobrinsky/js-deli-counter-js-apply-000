@@ -20,7 +20,7 @@ function currentLine(array) {
   
   for (let i = 0; i < array.length; i++){
     newArray.push(`${i+1}. ${array[i]}`)
-    newArray.join(', ')
+    newArray.join('.. ')
   }
   if (array.length > 0){
     
